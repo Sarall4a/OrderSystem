@@ -1,4 +1,4 @@
 ## Путь до классов
 
-src->main->java->ordersystem
-src->main->java->resources
+* ** src->main->java->ordersystem
+* ** src->main->java->resources
