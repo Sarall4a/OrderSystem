@@ -1,0 +1,36 @@
+# Eclipse
+.classpath
+.project
+.settings/
+*.pydevproject
+.metadata
+target/
+.apt_generated
+.factorypath
+.sts4-cache/
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.flattened-pom.xml
+
+# IntelliJ IDEA (если когда-либо будете использовать)
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# OS X
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
