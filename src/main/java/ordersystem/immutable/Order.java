@@ -20,12 +20,7 @@ public class Order {
   private final LocalDateTime orderDate;
 
   public Order(String customerId, Map<Product, Integer> goods, BigDecimal totalPrice) {
-    if (customerId == null
-        || customerId.isEmpty()
-        || goods == null
-        || goods.isEmpty()
-        || totalPrice == null
-        || totalPrice.compareTo(BigDecimal.ZERO) < 0) {
+    if (customerId == null || customerId.isEmpty() || goods == null || goods.isEmpty() || totalPrice == null || totalPrice.compareTo(BigDecimal.ZERO) < 0) {
       logger.error(
           "Попытка создать заказ с некорректными данными. customerId: '{}', goods: {}, totalPrice: {}",
           customerId,

@@ -10,12 +10,7 @@ public final class Product {
   private final BigDecimal price;
 
   public Product(String articleId, String name, BigDecimal price) {
-    if (articleId == null
-        || articleId.isEmpty()
-        || name == null
-        || name.isEmpty()
-        || price == null
-        || price.compareTo(BigDecimal.ZERO) <= 0) {
+    if (articleId == null || articleId.isEmpty() || name == null || name.isEmpty() || price == null || price.compareTo(BigDecimal.ZERO) <= 0) {
       throw new IllegalArgumentException("Введите данные корректно");
     }
     this.articleId = articleId;

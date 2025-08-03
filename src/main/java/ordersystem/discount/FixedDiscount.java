@@ -11,9 +11,7 @@ public class FixedDiscount implements DiscountStrategy {
   private final BigDecimal percentage;
 
   public FixedDiscount(BigDecimal percentage) {
-    if (percentage == null
-        || percentage.compareTo(BigDecimal.ZERO) < 0
-        || percentage.compareTo(BigDecimal.ONE) > 0) {
+    if (percentage == null || percentage.compareTo(BigDecimal.ZERO) < 0 || percentage.compareTo(BigDecimal.ONE) > 0) {
       logger.error(
           "Попытка создать стратегию скидки с некорректным процентом: {}. Процент должен быть между 0 и 1 (0% и 100%).",
           percentage);

@@ -32,11 +32,7 @@ public class App {
             if (taskId % 2 == 0) {
               userCart.removeItem(mouse, 1);
             }
-            System.out.println(
-                Thread.currentThread().getName()
-                    + " - Текущая корзина: "
-                    + userCart.getItems().size()
-                    + " уникальных товаров.");
+            System.out.println(Thread.currentThread().getName() + " - Текущая корзина: " + userCart.getItems().size() + " уникальных товаров.");
           });
     }
     executorService.shutdown();
@@ -54,13 +50,7 @@ public class App {
         .getItems()
         .forEach(
             (product, quantity) ->
-                System.out.println(
-                    "Товар: "
-                        + product.getName()
-                        + ", Количество: "
-                        + quantity
-                        + ", Цена: "
-                        + product.getPrice().multiply(new BigDecimal(quantity))));
+                System.out.println("Товар: " + product.getName() + ", Количество: " + quantity+ ", Цена: " + product.getPrice().multiply(new BigDecimal(quantity))));
 
     System.out.println("Общая сумма в корзине: " + userCart.getPrice());
 
@@ -85,13 +75,7 @@ public class App {
         .getItems()
         .forEach(
             (product, quantity) ->
-                System.out.println(
-                    "Товар: "
-                        + product.getName()
-                        + ", Количество: "
-                        + quantity
-                        + ", Цена: "
-                        + product.getPrice().multiply(new BigDecimal(quantity))));
+                System.out.println("Товар: " + product.getName() + ", Количество: " + quantity+ ", Цена: " + product.getPrice().multiply(new BigDecimal(quantity))));
 
     System.out.println("\n--- Размещение заказа без скидки ---");
 
